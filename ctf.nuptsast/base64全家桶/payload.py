@@ -1,0 +1,5 @@
+import base64 as b
+str ='''
+R1pDVE1NWlhHUTNETU4yQ0dZWkRNTUpYR00zREtNWldHTTJES1JSV0dJM0RDTlpUR1kyVEdNWlRHSTJVTU5SUkdaQ1RNTkJWSVkzREVOUlJHNFpUTU5KVEdFWlRNTjJF
+'''
+print b.b16decode(b.b32decode(b.b64decode(str)))
